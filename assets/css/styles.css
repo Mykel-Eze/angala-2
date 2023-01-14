@@ -1,6 +1,7 @@
 :root {
-    --pry-color: #1C75BC;
-    --sec-color: #8DC63F;
+    --pry-color: #89163B;
+    --sec-color: #FABB0A;
+    --tert-color: #171637;
 	  --font: 'raleway', sans-serif;
     --font-bold: 'raleway-bold', sans-serif;
     --font-medium: 'raleway-medium', sans-serif;
@@ -25,20 +26,13 @@ html {
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-	background: rgba(63, 120, 186, 0.9);
+	background: rgba(137, 22, 59, 0.9);
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(63, 120, 186, 0.4);
+	background: rgba(137, 22, 59, 0.4);
 }
 
-.theme-dark ::-webkit-scrollbar-thumb {
-	background: rgba(141, 198, 63, 0.8);
-	border-radius: 10px;
-}
-.theme-dark ::-webkit-scrollbar-thumb:hover {
-	background: rgba(141, 198, 63, 0.4);
-}
 
 .__nuxt-error-page {
   /* position: relative;
@@ -119,7 +113,7 @@ h5, h6{
 }
 .sec-bg{
     background-color: var(--sec-color);
-    color: #161616;
+    color: #171637;
 }
 
 .white-bg{
@@ -219,18 +213,3 @@ img {
     display: none !important;
   }
 }
-
-/**** Some Home Style ****/
-#home {
-  color: black;
-  height: calc(100vh - 0px);
-  min-height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--pry-color)
-}
-#home .row {
-  margin-bottom: 0;
-}
-/**** end of Some Home Styles ****/
