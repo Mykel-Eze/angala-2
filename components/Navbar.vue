@@ -18,10 +18,29 @@
           </ul>
 
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li>
-              <nuxt-link to="/#" @click="scrollToTop()">
+            <li class="dropdown-trigger-">
+              <a href="#" class="dropdown-trigger flex-div" data-target="solutions-dropdown">
                 <span>Our Solutions</span>
-              </nuxt-link>
+                <span class="nav-caret-down">&#10094;</span>
+              </a>
+              <!-- Dropdown Structure -->
+              <ul id="solutions-dropdown" class="dropdown-content">
+                <li>
+                  <nuxt-link to="/payrail-agency" @click="scrollToTop()">
+                    <span>Payrail Agency</span>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/payrail-business" @click="scrollToTop()">
+                    <span>Payrail Business</span>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/credit-services" @click="scrollToTop()">
+                    <span>Credit Services</span>
+                  </nuxt-link>
+                </li>
+              </ul>
             </li>
             <li>
               <nuxt-link to="/approach" @click="scrollToTop()">
@@ -107,6 +126,11 @@ export default {
     M.Sidenav.init(elemsSidenav)
     const elemsScrollspy = document.querySelectorAll('.scrollspy')
     M.ScrollSpy.init(elemsScrollspy)
+    const elemsDropdown = document.querySelectorAll('.dropdown-trigger')
+    M.Dropdown.init(elemsDropdown, {
+      coverTrigger: false,
+      hover: true
+    })
   },
   methods: {
     scrollToTop () {

@@ -217,3 +217,9 @@ export default {
 </script>
 
 <style src="..\assets\css\home.css"></style>
+
+<style scoped>
+#home {
+  background-image: url('../assets/images/hero-image.jpg');
+}
+</style>

@@ -1,0 +1,242 @@
+
+/*---=== Payrail-Agency ===---*/
+
+/**** Home Style ****/
+.small-title-desc {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+@media(max-width: 992px) {}
+
+@media(max-width: 600px) {}
+/**** end of  Home Style ****/
+
+/**** Connectivity Style ****/
+section#connectivity {
+  background: #111214;
+  color: white;
+}
+
+.ccbr-grid-div > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+hr.top-hr {
+  width: 90px;
+  margin: 0;
+  border: none;
+  height: 7px;
+  background: var(--sec-color);
+}
+.ccbr-txt-side {
+  padding: 20px 50px;
+  font-family: var(--font-medium);
+  font-size: 18px;
+}
+.ccbr-img-side img {
+  vertical-align: bottom;
+  visibility: hidden;
+}
+.side-1 {
+  background-image: url("../images/agency-people.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.side-2 {
+  background-image: url("../images/agent-woman.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+@media (max-width: 992px) {
+  section#connectivity {
+    padding: 80px 0 30px;
+  }
+  .ccbr-grid-div > .container {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  .ccbr-txt-side {
+    padding: 30px 0;
+  }
+  .ccbr-img-side img {
+    visibility: visible;
+  }
+  .side-1, .side-2 {
+    background-image: none;
+  }
+}
+
+@media(max-width: 600px) {
+  .ccbr-grid-div > .container {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  p.section-desc, .ccbr-txt-side {
+    font-size: 16px;
+  }
+}
+/**** end of  Connectivity Style ****/
+
+/**** Angala-How Style ****/
+section#angala-how {
+  padding: 100px 0;
+  background-image: url('../images/ring-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+}
+.ah-content-wrapper {
+  background-image: url(../images/dynamic-partnership-bg.png);
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+  font-family: var(--font-medium);
+  width: 80%;
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  border-radius: 60px 0px 0px 60px;
+  overflow: hidden;
+}
+.ah-content-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(109.75deg, #89163B 33%, rgba(137, 22, 59, 0.33) 77.94%);
+}
+.ah-grid-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+@media(max-width: 992px) {
+  .ah-content-wrapper {
+    width: 95%;
+  }
+}
+
+@media(max-width: 600px) {
+  .ah-grid-block {
+    grid-template-columns: 100%;
+    padding: 30px 20px;
+  }
+  .ah-content-wrapper::before {
+    background: linear-gradient(120deg, #89163B 43%, rgba(137, 22, 59, 0.33) 87.94%);
+  }
+}
+/**** end of Angala-How Style ****/
+
+/**** Cutting-Edge Style ****/
+section#cutting-edge {
+  padding: 100px 0;
+}
+.cutting-edge-wrapper {
+  background: #111214;
+  color: white;
+  border-radius: 12px;
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.ce-btn-wrapper {
+  margin-top: 60px;
+}
+a.ce-btn {
+  padding: 15px 20px;
+  background: var(--sec-color);
+  color: var(--tert-color);
+  font-family: var(--font-medium);
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 600px) {
+  section#cutting-edge {
+    padding: 70px 0;
+  }
+  .cutting-edge-wrapper {
+    grid-template-columns: 100%;
+    padding: 15px 30px;
+    gap: 50px;
+  }
+  .ce-btn-wrapper {
+    margin-top: 40px;
+  }
+}
+/**** end of Cutting-Edge Style ****/
+
+/**** Agency-Benefits Style ****/
+section#agency-benefits {
+  padding: 80px 0 50px;
+  background: #F4F4F4;
+}
+section#agency-benefits .section-header {
+  max-width: 650px;
+  margin: auto;
+  font-size: 16px;
+  font-family: var(--font-medium);
+  margin-bottom: 40px;
+}
+section#agency-benefits .section-header .section-title {
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+.agency-benefits-wrapper {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  gap: 5%;
+  align-items: center;
+}
+ul.benefits-list {
+  margin: 0;
+}
+ul.benefits-list li.flex-div {
+  gap: 30px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+@media(max-width: 992px) {
+  .agency-benefits-wrapper {
+    grid-template-columns: 100%;
+    gap: 30px;
+  }
+  img.benefits-img {
+    width: 80%;
+  }
+}
+
+@media(max-width: 600px) {
+  img.benefits-img {
+    width: 100%;
+  }
+}
+/**** end of Agency-Benefits Style ****/
+
+/**** Questions-Here Style ****/
+section#questions-here {
+  padding: 80px 0 70px;
+}
+.qh-txt {
+  font-size: 38px;
+  letter-spacing: -0.5px;
+  color: #8C8C8C;
+  font-family: var(--font-smbold);
+}
+.qh-txt a:hover {
+  color: var(--pry-color);
+}
+/**** end of Questions-Here Style ****/

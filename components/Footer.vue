@@ -19,10 +19,19 @@
             </div>
             <ul class="footer-block-list">
               <li>
-                <a href="https://payrail.co/agency" target="_blank" rel="noopener noreferrer" class="footer-link">Payrail Agency</a>
+                <nuxt-link to="/payrail-agency" class="footer-link">
+                  Payrail Agency
+                </nuxt-link>
               </li>
               <li>
-                <a href="https://payrail.co/business" target="_blank" rel="noopener noreferrer" class="footer-link">Payrail Business</a>
+                <nuxt-link to="/payrail-business" class="footer-link">
+                  Payrail Business
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/credit-services" class="footer-link">
+                  Credit Services
+                </nuxt-link>
               </li>
             </ul>
           </div>
