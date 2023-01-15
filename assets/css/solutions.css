@@ -8,7 +8,11 @@
 }
 @media(max-width: 992px) {}
 
-@media(max-width: 600px) {}
+@media(max-width: 600px) {
+  img.home-payrail-logo {
+    width: 80%;
+  }
+}
 /**** end of  Home Style ****/
 
 /**** Connectivity Style ****/
@@ -240,3 +244,284 @@ section#questions-here {
   color: var(--pry-color);
 }
 /**** end of Questions-Here Style ****/
+
+
+/*---=== Payrail-Business ===---*/
+
+/**** Payrail-Business-Stages Style ****/
+section#payrail-business-stages {
+  padding: 100px 0 80px;
+}
+.stages-wrapper {
+  width: 90%;
+  margin: auto;
+}
+.stage-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+.stage-block-txt {
+  background: var(--pry-color);
+  border-radius: 25px 0 0 25px;
+  color: white;
+  font-size: 22px;
+  font-family: var(--font-medium);
+  padding: 30px;
+  min-height: 200px;
+  flex-grow: 1;
+  width: 100%;
+}
+.stage-block.even-stage-block .stage-block-txt {
+  border-radius: 0 25px 25px 0;
+}
+.stage-block-txt p {
+  max-width: 80%;
+}
+.stage-block-img {
+  width: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+img.dashboard-screenshot {
+  position: absolute;
+  width: 100%;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+img.path-1 {
+  position: absolute;
+  right: 35%;
+  bottom: -70px;
+}
+img.path-2 {
+  position: absolute;
+  left: 35%;
+  bottom: -70px;
+}
+
+@media(max-width: 992px) {
+  .stage-block.flex-div {
+    flex-direction: column-reverse;
+  }
+  .stage-block.even-stage-block.flex-div {
+    flex-direction: column;
+  }
+  .stage-block-img {
+    width: 70%;
+  }
+  .stage-block-txt {
+    border-radius: 25px !important;
+  }
+  .stage-block-txt p {
+    max-width: 100%;
+  }
+  img.path-1, img.path-2 {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  .stage-block-img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+  }
+  .stage-block-txt {
+    border-radius: 0 0 25px 25px !important;
+  }
+}
+/**** end of Payrail-Business-Stages Style ****/
+
+/**** Why-Payrail-Business Style ****/
+section#why-payrail-business {
+  background: rgba(234, 98, 18, 0.1);
+  padding: 60px 0 70px;
+}
+h4.wpb-sect-heading {
+  font-size: 64px;
+  line-height: 72px;
+  color: var(--tert-color);
+  max-width: 660px;
+  font-family: var(--font-bold);
+  margin-bottom: 50px;
+}
+section#why-payrail-business .sect-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+img.int-img {
+  display: none;
+  width: 90%;
+}
+img.int-img.active-int-img {
+  display: initial;
+}
+h5.indicator-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+span.indicator-text {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6f6f6f;
+  font-family: var(--font-medium);
+}
+.active-indicator-block span.indicator-text {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--tert-color);
+}
+.txt-indicator-block {
+  position: relative;
+  padding: 15px 20px;
+}
+.txt-indicator-block.active-indicator-block::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 90%;
+  left: 0;
+  top: 5%;
+  background-color: var(--pry-color);
+  border-radius: 20px;
+  opacity: 0.5;
+  animation: indicatorHeight 1s 1;
+  animation-play-state: running !important;
+}
+ul.int-txt-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 98%;
+}
+
+@keyframes indicatorHeight {
+  from {
+      height: 0;
+  }
+  to {
+      height: 90%;
+  }
+}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 600px) {
+  h4.wpb-sect-heading {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+  }
+  section#why-payrail-business .sect-contents {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  img.int-img {
+    width: 100%;
+  }
+  .txt-indicator-block {
+    display: none;
+  }
+  .txt-indicator-block.active-indicator-block {
+    display: block;
+  }
+}
+/**** end of Why-Payrail-Business Style ****/
+
+/**** Discover-More Style ****/
+section#discover-more {
+  padding: 100px 0 80px;
+}
+.discover-more-wrapper {
+  background: #111214;
+  border-radius: 12px;
+  color: white;
+  padding: 60px 20px;
+}
+.discover-more-wrapper .section-title {
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+.discover-btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+.link-btn {
+  background-color: var(--sec-color);
+  width: 136px;
+  height: 42px;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--tert-color);
+  font-family: var(--font-smbold);
+  display: inline-block;
+  line-height: 42px;
+  border-radius: 6px;
+}
+/**** end of Discover-More Style ****/
+
+/**** Testimonies Style ****/
+section#testimonies {
+  padding: 50px 0;
+}
+.testimonies-wrapper {
+  position: relative;
+  padding: 10px 0 0;
+}
+.testimonies-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #F4F4F4;
+  border-radius: 12px;
+}
+.testimony-block {
+  background: #FFFFFF;
+  box-shadow: 5px 15px 25px 5px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 22px;
+}
+.testimonies-carousel-wrapper .carousel {
+  height: 550px;
+}
+.testimonies-carousel-wrapper .carousel .carousel-item {
+  width: 450px;
+  height: 100%;
+  top: 60px;
+}
+.testimony-header.flex-div {
+  gap: 15px;
+}
+.testimony-details {
+  margin: 30px 0;
+}
+.testifier-role.pry-color {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .testimonies-carousel-wrapper .carousel {
+    height: 700px;
+  }
+  .testimonies-carousel-wrapper .carousel .carousel-item {
+    width: 300px;
+  }
+  .testimonies-wrapper::before {
+    width: 100%;
+  }
+}
+/**** end of Testimonies Style ****/

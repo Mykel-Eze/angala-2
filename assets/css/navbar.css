@@ -223,6 +223,7 @@ pointer-events: none;
 }
 nav.main-nav ul > li > a.flex-div {
   gap: 10px;
+  outline: none !important;
 }
 nav.main-nav ul > li > a.flex-div > span.nav-caret-down {
   transform: rotate(-90deg);

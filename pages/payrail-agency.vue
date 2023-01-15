@@ -2,8 +2,8 @@
   <div id="agency-page">
     <!---=== Home Section ===--->
     <section id="home">
-      <div class="row">
-        <div class="container">
+      <div class="row full-height">
+        <div class="container full-height">
           <div class="home-content-wrapper">
             <div class="home-txt-side">
               <img src="~/assets/images/payrail-agency.svg" alt="payrail agency" class="home-payrail-logo">
