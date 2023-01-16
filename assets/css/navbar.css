@@ -235,7 +235,7 @@ li.dropdown-trigger-:hover > a{
   font-family: var(--font-xbold);
 }
 nav.main-nav ul.dropdown-content > li > a {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--tert-color);
   text-align: center;
 }

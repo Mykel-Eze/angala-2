@@ -1,0 +1,155 @@
+/**** Dynamic-Partnerships Style ****/
+section#dynamic-partnerships {
+  padding: 100px 0;
+}
+.dp-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 10px 70px 50px;
+  position: relative;
+}
+.dp-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 85%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, #F3F3F3, #F3F3F3), linear-gradient(109.75deg, #89163B 33%, rgba(137, 22, 59, 0.33) 77.94%);
+  border-radius: 25px;
+}
+.dp-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+.dp-block-txt {
+  font-size: 20px;
+  font-family: var(--font-medium);
+}
+.dp-block-img {
+  text-align: right;
+}
+img.hand-shake-img {
+  width: 90%;
+}
+.dp-block-big-txt > .flex-div {
+  font-size: 48px;
+  font-family: var(--font-smbold);
+  line-height: 104.9%;
+  align-items: flex-start;
+  gap: 30px;
+}
+img.knot-ropes-img {
+  width: 70%;
+}
+
+@media(max-width: 992px) {
+  .dp-block {
+    grid-template-columns: 100%;
+  }
+  .dp-wrapper {
+    padding: 30px 50px 50px;
+  }
+  .dp-wrapper::before {
+    width: 100%;
+  }
+}
+
+@media(max-width: 600px) {
+  section#dynamic-partnerships {
+    padding: 70px 0;
+  }
+  .dp-wrapper {
+    padding: 20px 30px 50px;
+  }
+  .dp-wrapper::before {
+    border-radius: 15px;
+  }
+  .dp-block-big-txt > .flex-div {
+    flex-direction: column;
+    font-size: 38px;
+  }
+  img.hand-shake-img, img.knot-ropes-img {
+    width: 100%;
+  }
+}
+/**** end of Dynamic-Partnerships Style ****/
+
+/**** Angala-Companies Style ****/
+section#angala-companies {
+  padding: 50px 0;
+  background-image: url('../images/dotted-rings.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.angala-companies-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.company-block {
+  background: #FFFFFF;
+  box-shadow: 5px 13px 22px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  padding: 25px;
+}
+div#arila-block .company-block, div#arila-block-1 .company-block {
+  width: 100%;
+  margin-left: 0;
+  background: #1A242D;
+  color: white;
+  height: auto;
+}
+div#arila-block-1 .company-block {
+  margin-bottom: 50px;
+}
+img.company-image {
+  margin-bottom: 15px;
+  height: 40px;
+}
+.company-name {
+  font-size: 20px;
+  font-family: var(--font-smbold);
+}
+.company-desc {
+  font-size: 17px;
+}
+.arila-txt {
+  color: #8DC63F;
+}
+
+@media (min-width: 993px) {
+  .company-block-wrapper.jl .company-block {
+    height: calc(100% - 80px);
+  }
+}
+
+@media(max-width: 992px) {
+  section#angala-companies {
+    padding: 0;
+    padding-bottom: 80px;
+    background-size: 100%;
+  }
+  .angala-companies-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .company-block {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  .angala-companies-wrapper {
+    grid-template-columns: 100%;
+  }
+}
+/**** end of Angala-Companies Style ****/
