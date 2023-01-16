@@ -75,9 +75,33 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/#" class="sidenav-close" @click="scrollToTop()">
-            <span>Our Solutions</span>
-          </nuxt-link>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <span>Solutions</span>
+                <span class="nav-caret-down">&#10094;</span>
+              </div>
+              <div class="collapsible-body">
+                <ul id="solutions-dropdown-2" class="collapsible-dropdown">
+                  <li>
+                    <nuxt-link to="/payrail-agency" class="sidenav-close" @click="scrollToTop()">
+                      <span>Payrail Agency</span>
+                    </nuxt-link>
+                  </li>
+                  <li>
+                    <nuxt-link to="/payrail-business" class="sidenav-close" @click="scrollToTop()">
+                      <span>Payrail Business</span>
+                    </nuxt-link>
+                  </li>
+                  <li>
+                    <nuxt-link to="/credit-services" class="sidenav-close" @click="scrollToTop()">
+                      <span>Credit Services</span>
+                    </nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </li>
         <li>
           <nuxt-link to="/approach" class="sidenav-close" @click="scrollToTop()">
@@ -131,6 +155,8 @@ export default {
       coverTrigger: false,
       hover: true
     })
+    const elemsCollapsible = document.querySelectorAll('.collapsible')
+    M.Collapsible.init(elemsCollapsible)
   },
   methods: {
     scrollToTop () {

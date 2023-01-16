@@ -29,15 +29,15 @@ nav.main-nav ul > li > a{
   font-size: 15px;
   line-height: 18px;
 }
-nav.main-nav ul > li > a:hover, a.nuxt-link-active {
+nav.main-nav ul > li > a:hover, a.nuxt-link-exact-active {
   font-family: var(--font-xbold);
   /* color: var(--pry-color); */
 }
 nav.main-nav.scrolled-nav ul > li > a, nav.main-nav.nav-2 ul > li > a {
   color: #1A242D;
 }
-nav.main-nav.scrolled-nav ul > li > a:hover, nav.main-nav.nav-2 a.nuxt-link-active,
-nav.main-nav.scrolled-nav a.nuxt-link-active {
+nav.main-nav.scrolled-nav ul > li > a:hover, nav.main-nav.nav-2 a.nuxt-link-exact-active,
+nav.main-nav.scrolled-nav a.nuxt-link-exact-active {
   color: var(--pry-color);
   font-family: var(--font-xbold);
 }
@@ -61,7 +61,7 @@ nav.main-nav.nav-2 img.colored-img {
   display: initial;
 }
 
-#nav-wrapper a.nuxt-link-active > span::before {
+#nav-wrapper a.nuxt-link-exact-active > span::before {
   position: absolute;
   content: "";
   bottom: -10px;
@@ -70,8 +70,8 @@ nav.main-nav.nav-2 img.colored-img {
   width: 100%;
   background-color: white;
 }
-#nav-wrapper nav.main-nav.scrolled-nav ul > li > a.nuxt-link-active > span::before,
-#nav-wrapper nav.main-nav.nav-2 ul > li > a.nuxt-link-active > span::before {
+#nav-wrapper nav.main-nav.scrolled-nav ul > li > a.nuxt-link-exact-active > span::before,
+#nav-wrapper nav.main-nav.nav-2 ul > li > a.nuxt-link-exact-active > span::before {
   background-color: var(--pry-color)
 }
 nav.main-nav ul > li > a > span {
@@ -83,7 +83,7 @@ nav.main-nav.scrolled-nav ul > li > a > span {
   position: relative;
   pointer-events: none;
 }
-#nav-wrapper ul > li > a.nuxt-link-active > button {
+#nav-wrapper ul > li > a.nuxt-link-exact-active > button {
   color: white;
   background-color: #1A242D;
 }
@@ -204,11 +204,12 @@ nav .brand-logo {
 }
 
 .sidenav-footer {
-position: absolute;
-bottom: 80px;
-left: 0;
-padding: 0 32px;
-width: 100%;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  padding: 20px 32px;
+  width: 100%;
+  background: white;
 }
 .sidenav-footer .footer-social-wrapper {
 display: flex;
@@ -225,7 +226,7 @@ nav.main-nav ul > li > a.flex-div {
   gap: 10px;
   outline: none !important;
 }
-nav.main-nav ul > li > a.flex-div > span.nav-caret-down {
+span.nav-caret-down {
   transform: rotate(-90deg);
 }
 nav.main-nav .dropdown-content {
@@ -306,7 +307,10 @@ nav.main-nav ul.dropdown-content > li > a:hover {
   .sidenav li.contact-us-li.hul-1 {
       bottom: 135px;
   }
-  .sidenav li:not(.contact-us-li) a {
+  .sidenav ul.collapsible li.active {
+    background-color: transparent;
+  }
+  .sidenav li:not(.contact-us-li) a, .sidenav .collapsible-header {
     background: transparent !important;
     font-size: 24px;
     height: initial;
@@ -315,7 +319,23 @@ nav.main-nav ul.dropdown-content > li > a:hover {
     font-family: var(--font-smbold);
     margin: 30px 0;
   }
-  .sidenav li:not(.contact-us-li) a.nuxt-link-active {
+  .sidenav .collapsible-header {
+    margin: 10px 0;
+  }
+  .sidenav .collapsible-header {
+    justify-content: space-between;
+    padding: 0 32px;
+    display: flex !important;
+  }
+  ul#solutions-dropdown-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidenav .collapsible-body {
+    padding: 2px 0;
+    background: rgba(0,0,0,0.05);
+  }
+  .sidenav li:not(.contact-us-li) a.nuxt-link-exact-active {
     color: var(--pry-color);
   }
   img.logo {
@@ -336,7 +356,7 @@ nav.main-nav ul.dropdown-content > li > a:hover {
     text-transform: none;
     border-radius: 4px;
   }
-  #nav-wrapper a.nuxt-link-active > span::before {
+  #nav-wrapper a.nuxt-link-exact-active > span::before {
     background-color: var(--pry-color);
   }
 }
@@ -355,7 +375,7 @@ nav.main-nav ul.dropdown-content > li > a:hover {
       min-width: auto;
       margin-right: 0;
   }
-  .sidenav li>a {
+  .sidenav li>a, .sidenav .collapsible-header {
       color: rgba(0,0,0,0.87);
       display: block;
       font-size: 24px;
@@ -381,7 +401,7 @@ nav.main-nav ul.dropdown-content > li > a:hover {
   a.brand-logo img {
       width: 70%;
   }
-  .sidenav li:not(.contact-us-li) a {
+  .sidenav li:not(.contact-us-li) a, .sidenav .collapsible-header {
       background: transparent !important;
       font-size: 30px;
       height: 30px;
