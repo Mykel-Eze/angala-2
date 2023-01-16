@@ -199,7 +199,9 @@
         <div class="container">
           <div class="qh-txt center">
             Your questions answered
-            <a href="http://" target="_blank" rel="noopener noreferrer" class="sec-color">here ↗</a>
+            <nuxt-link to="/faq" class="sec-color">
+              here ↗
+            </nuxt-link>
           </div>
         </div>
       </div>
