@@ -24,14 +24,14 @@
             <ul class="collapsible">
               <li class="active">
                 <div class="collapsible-header flex-div justify-content-btw">
-                  <span>Business Owners</span>
+                  <span>How is Angala Fintech regulated?</span>
                   <img src="~/assets/images/down-arr.svg" alt="down-arr" class="down-arr">
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
                     We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria,
+                    and national equivalents elsewhere.
                   </p>
                 </div>
               </li>
@@ -42,9 +42,10 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    More transactions means more commissions. As a Payrail Agent, you have the power and control to
+                    make as much money as you can by providing financial services in your community easily within the
+                    app, and also get your Mastercard debit card almost instantly. An agent by a roadside in a small
+                    village might expect to transact 100,000 naira in a day.
                   </p>
                 </div>
               </li>
@@ -55,9 +56,7 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    Cash withdrawal is the most frequently used service, particularly in regions without a local ATM.
                   </p>
                 </div>
               </li>
@@ -68,9 +67,7 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    No formal qualifications are necessary. Agents should be able to read and use a mobile phone or tablet.
                   </p>
                 </div>
               </li>
@@ -81,9 +78,8 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    Most agents operate in their own community where they understand the environment and are known.
+                    Agents are particularly important in rural or hinterlands where there are no ATMs.
                   </p>
                 </div>
               </li>
@@ -94,9 +90,7 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    Agents should have their own working capital to operate and a stall or location to operate from.
                   </p>
                 </div>
               </li>
@@ -107,9 +101,8 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    Our business development officers support the agents in their regions, with initial
+                    training and regular visits for support.
                   </p>
                 </div>
               </li>
@@ -120,9 +113,7 @@
                 </div>
                 <div class="collapsible-body">
                   <p class="faq-txt">
-                    We are compliant with all relevant regulatory bodies, such as the National Data Protection
-                    Regulation (NDPR) and Payment Card Industry Data Security Standards (PCI DSS) in Nigeria, and
-                    national equivalents elsewhere.
+                    Click below to go to the Payrail Agency website or ‘Join as an Agent’
                   </p>
                 </div>
               </li>
