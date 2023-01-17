@@ -1,0 +1,146 @@
+/**** Financial-Inclusion Style ****/
+section#financial-inclusion {
+  padding: 100px 0;
+  background-color: #111214;
+  color: white;
+}
+.financial-inclusion-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  gap: 40px;
+}
+.fiw-title {
+  font-size: 62px;
+  line-height: 66px;
+  font-family: var(--font-bold);
+}
+.fiw-desc {
+  font-size: 20px;
+  font-family: var(--font-medium);
+}
+.fiw-desc p:first-child {
+  margin-top: 0;
+}
+.sme-financing {
+  margin-top: 30px;
+  width: 90%;
+}
+
+@media (max-width: 992px) {
+  .financial-inclusion-wrapper {
+    grid-template-columns: 100%;
+  }
+  .sme-financing {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {}
+/**** end of Financial-Inclusion Style ****/
+
+/**** SDG Style ****/
+section#sdg {
+  padding: 100px 0 80px;
+}
+section#sdg .container {
+  padding: 40px;
+}
+section#sdg .container::before, section#sdg .container::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40%;
+  left: 0;
+  top: 0;
+  background: #F3F3F3;
+  border-radius: 12px;
+}
+section#sdg .container::after {
+  height: 20%;
+  top: 58.5%;
+}
+.sdg-header {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.sdg-header-title {
+  color: var(--tert-color);
+  font-size: 64px;
+  line-height: 66px;
+}
+.sdg-imp {
+  max-width: 330px;
+  font-size: 18px;
+  line-height: 23px;
+}
+img.sdg-txt-image {
+  margin-bottom: 5px;
+}
+.sdg-block-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px 30px;
+  position: relative;
+  z-index: 1;
+}
+.sdg-block {
+  background: #FFFFFF;
+  box-shadow: 4px 13px 22px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  padding: 30px;
+}
+.sdg-img-wrapper.flex-div {
+  gap: 10px;
+}
+img.sdg-img {
+  max-width: 15%;
+}
+.sdg-block-header {
+  margin: 60px 0 17px;
+}
+.sdg-figure {
+  color: #C0C0C0;
+  font-size: 36px;
+  font-family: var(--font-bold);
+}
+.sdg-title {
+  color: var(--pry-color);
+  font-size: 22px;
+  font-family: var(--font-bold);
+}
+.sdg-desc {
+  font-size: 24px;
+  line-height: 135%;
+  color: var(--tert-color);
+}
+
+@media (max-width: 992px) {
+  .sdg-header.flex-div {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  section#sdg .container {
+    padding: 30px 20px;
+  }
+  .sdg-header-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .sdg-block-wrapper {
+    grid-template-columns: 100%;
+    gap: 30px;
+  }
+  section#sdg .container::before {
+    height: 25%;
+  }
+  section#sdg .container::after {
+    height: 20%;
+    top: 50%;
+  }
+}
+/**** end of SDG Style ****/
